@@ -1,0 +1,277 @@
+/* VALORES GENERALES -------------------------------------------------------------------------------------*/
+* {
+  margin:0;
+  padding: 0;
+}
+
+/* Equivale a 10px */
+html {
+  font-size: 62.5%;
+}
+
+/* HEADER ------------------ LOGO - h1 - nombre */
+header {
+  width: 100%;
+  margin: 20rem auto 5rem;
+  text-align: center; /*centralizar todos los elementos del header */
+  font-size: 2rem;
+  line-height: 4rem; 
+}
+
+#nombre {
+  font-size: 1.5rem; /* achico el nombre porque estaba definido en 2rem */
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+.botones-home{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+ } 
+
+ .botones-home a { /* "Iniciar juego es un input y pone subrayado por defecto" */
+  margin: 0 auto;
+  text-decoration: none;
+ } 
+
+.btn-iniciar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 35rem;
+  height: 8rem;
+  background: #98a8df;
+  border: 0.1rem solid black;
+  border-radius: 2.4rem;
+  font-style: normal; /*por defecto*/
+  font-weight: 600; /*negrita*/
+  font-size: 2.4rem;
+  justify-content: center; /* centrar el contenido del input */
+  color: #0A3871;
+}
+
+.btn-iniciar:hover {
+  background-color: #4a92eb;
+}
+
+.btn-palabra {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  /* padding: 1rem; */
+  margin: 1rem auto; 
+  width: 35rem;
+  height: 8rem;
+  border: 0.1rem solid black;
+  border-radius: 2.4rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 8rem; 
+  justify-content: center;
+  color: #0A3871;
+  background: #D8DFE8;
+}
+
+.btn-palabra:hover {
+  background-color: #cccccc;
+}
+
+/* 2 da página ------------------------------------------------------------------------------------------------------------------------------- */
+
+.palabra-nueva{
+  width: 100%;
+  text-align: center; /* centrar todos los elementos*/
+ }
+
+ /* INPUT AGREGAR PALABRA NUEVA */
+.text-input {
+    font-style: italic;
+    font-size: 3.5rem;
+    width: 35rem;
+    color: #0A3871;
+    background: transparent;
+    border: none;
+    text-transform:uppercase; /*convertir a mayúsculas lo que digita el usuario*/
+    /* justify-content: center;  */
+      }
+
+  ::placeholder { 
+    color: #0A3871; 
+    text-transform:lowercase; /* minúsculas el texto de "agregue una palabra" */
+    text-transform: initial; /* mayúsculas 1era letra del texto de "agregue una palabra" */
+   }
+  
+  .text-input:focus { 
+      /* border: none; */
+      outline: none; /*sacar borde de input cuando digita*/
+     }
+
+     /* INCLUYE SIGNO Y ALERTA (LABEL) */
+  .form-group{
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    margin: 3rem 40%;
+  } 
+
+  .img-alerta{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    }
+
+    label {
+      padding-left: 2rem;
+      font-weight: 600;
+      font-style: italic;
+      font-size:2rem;
+      line-height: 100%; /*que quede al mismo nivel el signo con el label */
+      color: #495057;
+     }
+    
+     /* INLCUYE BOTONES DE GUARDAR Y CANCELAR */
+    .botones-div{
+      display: flex;
+      flex-direction: row;
+      align-content: space-around;
+      gap: 2rem; /* separación entre elementos */
+      justify-content: center;
+      margin-top: 20rem;
+     }
+
+    .btn-azul {
+      width: 35rem;
+      height: 8rem;
+      background: #98a8df ;
+      border-radius: 2.4rem;
+      color: #0A3871;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2.4rem;
+      justify-content: center; 
+    }
+
+    .btn-azul:hover {
+      background-color: #4a92eb;
+    }
+
+    .btn-blanco{
+      width: 35rem;
+      height: 8rem;
+      background: #D8DFE8;
+      border: 1px solid #0A3871;
+      box-sizing: border-box;
+      border-radius: 2.4rem;
+      color: #0A3871;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2.4rem;
+      justify-content: center;
+    }
+
+    .btn-blanco:hover {
+      background-color: #cccccc;
+    }
+
+    /* 3era página ---------------------------------------------------------------------------------------------------------*/
+.canvas{
+  width: 85vw; 
+  height: 45rem;
+  display: flex;
+  justify-content: center; 
+  /* align-items: center; */
+}
+
+.botones-div-canvas{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  gap: 2rem;
+  justify-content: center;
+ }
+
+.btn-azul2 {
+  width: 35rem;
+  height: 8rem;
+  background: #98a8df ;
+  border-radius: 2.4rem;
+  color: #0A3871;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  justify-content: center; 
+}
+
+.btn-azul2:hover {
+  background-color: #4a92eb;
+}
+
+.btn-blanco2{
+  width: 35rem;
+  height: 8rem;
+  background: #D8DFE8;
+  border: 1px solid #0A3871;
+  border-radius: 2.4rem;
+  color: #0A3871;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  justify-content: center;
+}
+
+.btn-blanco2:hover {
+  background-color: #cccccc;
+}
+
+  /* ------------------------------------------------------------------------------------------------- */
+
+  /* Portrait tablet to landscape and desktop */
+/* @media (min-width: 481px) and (max-width: 796px) {*/
+  @media screen and (max-width:480px) {
+
+    /* INPUT AGREGAR PALABRA NUEVA */
+    .text-input {
+        margin-left: 1rem; 
+          } 
+    
+      /* INCLUYE SIGNO Y ALERTA (LABEL) */
+      .form-group{
+        margin-left: 1rem;   
+      } 
+           
+      /* INLCUYE BOTONES DE GUARDAR Y CANCELAR */
+      .botones-div{
+        display: block; /* que cada botón ocupe todo el ancho*/
+         } 
+    
+        .btn-blanco{
+          margin-top: 1rem;
+        } 
+
+        .canvas{
+          /* margin: 0 -7rem; */
+          width: auto;
+          height: auto; /* que se adecúe al tamaño de la pantalla */
+        } 
+
+        .dibujo_ahorcado{
+          width: 120%; /* lo bajo a 120%*/
+          margin-left: -10rem;
+        } 
+        
+        .botones-div-canvas{
+          display: block;
+         } 
+        
+         .btn-azul2, .btn-blanco2{
+          margin: 1rem auto;
+        } 
+        
+  }
+  
